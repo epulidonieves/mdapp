@@ -12,7 +12,7 @@ import importlib.metadata
 sys.path.insert(0, os.path.abspath('../../src/'))
 
 project = 'MdApp'
-copyright = '2022, epulidonieves <epulido.nieves@gmail.com>"'
+copyright = '2022, epulidonieves <epulido.nieves@gmail.com>'
 author = 'epulidonieves <epulido.nieves@gmail.com>'
 release = importlib.metadata.version("mdapp")
 

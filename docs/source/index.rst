@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MdApp's documentation!
-======================
+MdApp
+=====
 
-Python app to learn and play with
+Python app to learn and play with.
 
 
 .. toctree::

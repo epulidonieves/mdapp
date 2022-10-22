@@ -1,4 +1,4 @@
-"""Just an mad up App to play with."""
+"""Made up App to play with."""
 
 from ._functions import value_to_bool
 
