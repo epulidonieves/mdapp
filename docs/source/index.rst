@@ -6,7 +6,7 @@
 MdApp's documentation!
 ======================
 
-A short documentation of a made up application to public in GitHub Pages.
+Python app to learn and play with
 
 
 .. toctree::

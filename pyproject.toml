@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "MdApp"
 version = "0.1.0"
-description = "Python made up app to learn Github Pages"
+description = "Python app to learn and play with"
 authors = ["epulidonieves <epulido.nieves@gmail.com>"]
 license = "MIT"
 readme = "README.md"
