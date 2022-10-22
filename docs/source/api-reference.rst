@@ -1,9 +1,8 @@
 API Reference
 =============
 
-:mod:`app_ghp`
---------------
+:mod:`mdapp`
+------------
 
-
-.. automodule:: app_ghp
+.. automodule:: mdapp
     :members:

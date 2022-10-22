@@ -1,2 +1,2 @@
-# py-app-ghp
-Python app to learn Github Pages
+# mdapp
+Python made up app to learn Github Pages
