@@ -12,21 +12,27 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 2
+      matrix:
+        python-version: [ '3.7', '3.8', '3.9', '3.10', '3.11' ]
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
       - uses: snok/install-poetry@v1
         with:
           virtualenvs-in-project: true
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.9
-          cache: 'poetry'
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
+          pip install tox tox-gh-actions
           poetry install --no-interaction
       - name: Run tox
-        run: poetry run tox
+        run: tox
   build-docs:
+    needs: test
     permissions:
       contents: read
       pages: write
@@ -44,7 +50,6 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.9
-          cache: 'poetry'
       - name: Install dependencies
         run: |
           poetry install --no-interaction
